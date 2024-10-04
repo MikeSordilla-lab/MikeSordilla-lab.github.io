@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="icon" href="world-wide-web.png">
+</head>
+
+<body>
+
+    <div class="hero-header" id="home">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m">m</i>
+                    <div class="logo-text">Mike</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/Sordilla.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Student</span></h5>
+                    <h1>Mike</h1>
+                    <br>
+                    <p> I am a BSIT graduate student with a strong passion for technology and problem-solving. My
+                        studies have provided me with skills in software development, database management, and web
+                        technologies. I’m proficient in programming languages like Java, Python, and JavaScript, and I
+                        am eager to explore emerging fields such as artificial intelligence and cybersecurity. I value
+                        teamwork and effective communication, and I’m excited to contribute to innovative projects that
+                        make a difference.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#contacts" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="education" id="education" >
+            <div class="wrapper">
+                <h2>Educational Attainment</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p>University of Northwestern Mindanao | 2023</p>
+                    <p>Relevant coursework: Software Development, Database Management, Web Technologies</p>
+                </div>
+                <div class="education-item">
+                    <h3>High School Diploma</h3>
+                    <p>Molave Vocational School | 2023</p>
+                    <p>Achievements: NC-2 PASSER</p>
+                </div>
+                <!-- Add more education items as needed -->
+            </div>
+        </section>
+        
+        <div id="skills">
+        <section class="skills" >
+            <div class="wrapper">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <h3>Programming Languages</h3>
+                        <p>Java, Python, JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Web Technologies</h3>
+                        <p>HTML, CSS, React, Node.js</p>
+                    </div>
+                   
+                    <div class="skill-item">
+                        <h3>Soft Skills</h3>
+                        <p>Teamwork, Communication, Problem-solving</p>
+                    </div>
+                    <!-- Add more skill items as needed -->
+                </div>
+            </div>
+
+
+            
+
+
+            <div id="contacts">
+                <section class="skills-list" >
+                    <div class="wrapper">
+                        <h2>Contact Me</h2>
+                        <p>If you'd like to get in touch, feel free to reach out through any of the following channels:
+                        </p>
+                        <div class="contact-info">
+                            <div class="skill-item">
+                                <h3>Email</h3>
+                                <p><a href="mike.sordilla@nmsc.edu.ph">mike.sordilla@nmsc.edu.ph</a></p>
+                            </div>
+                            
+                            <div class="skill-item">
+                             <h3>Contact</h3>   
+                                <p><a href="tel:+09351888436">+1 (234) 567-890</a></p>
+                            </div>
+                            <div class="skill-item">
+                                <h3>Facebook</h3>
+                                <p><a href="https://www.facebook.com/profile.php?id=100082677464750" target="_blank">Facebook</a></p>
+                            </div>
+                            <!-- Add more contact items as needed -->
+                        </div>
+                    </div>
+                
+                </section>
+            </div>
+            </div>
+        </section>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        <script>
+
+            var togglebtn = document.querySelector(".togglebtn");
+            var nav = document.querySelector(".navlinks");
+            var links = document.querySelector(".navlinks li");
+
+            togglebtn.addEventListener("click", function () {
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+
+            var typed = new Typed(".input", {
+                strings: ["Student", "2nd Year", "BSIT", ""],
+                typedSpeed: 70,
+                backSpeed: 55,
+                loop: true
+            })
+        </script>
+</body>
+
+</html>
